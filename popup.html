@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Facebook Auto Invite</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 240px;
+      padding: 16px;
+    }
+    h2 {
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+    button {
+      background-color: #1877F2;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    button:hover {
+      background-color: #165ecf;
+    }
+    .status {
+      margin-top: 12px;
+      font-size: 13px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <h2>Facebook Auto Invite</h2>
+  <button id="startBtn">Bắt đầu mời</button>
+  <div class="status" id="statusText">Chờ bắt đầu...</div>
+  <!-- Giao diện sẽ cập nhật số lượng người mời realtime tại đây -->
+  <div class="status" id="inviteCountText">Đã mời: <span id="inviteCountValue">0</span></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
